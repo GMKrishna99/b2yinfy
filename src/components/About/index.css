@@ -1,0 +1,192 @@
+
+
+.about-heading{
+    color: #fff;
+    text-align: center;
+
+}
+
+.about-heading h5{
+    font-weight: 400;
+    font-size: 18px;
+}
+.about-heading h1{
+    font-size: 40px;
+    margin: 12px 0;
+}
+.about-heading p{
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    font-size: 18px;
+}
+.about-buttons{
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.arrow-button{
+    margin: 8px 0;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.arrow-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .arrow-button:hover .arrow-icon {
+    transform: translateY(5px); /* Adjust the distance as needed */
+  }
+
+
+.vision{
+    background-image: url('../../assets/images/about.jpg');
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+.background-dark{
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0,0,0,0.8), transparent);
+    justify-content: flex-end;
+}
+.vision-content{
+    width: 50%;
+    color: #fff;
+    margin: 64px 36px;
+}
+.vision-content h1{
+    margin: 48px 0;
+    font-size: 28px;
+}
+.vision-content p{
+    font-size: 16px;
+    text-align: justify;
+}
+.values-container{
+    /* background-image: linear-gradient(to right,#2C3E50, #000000); */
+    background-color: #fff;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+}
+.values{
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
+    gap: 48px;
+    margin-left: 10%;
+    width: 80%;
+    
+}
+
+.values div p{
+    text-align: center;
+    margin-top: 8px;
+    
+}
+
+.advantage{
+    background-image: url('../../assets/images/about_us.jpg');
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+}
+.advantage .background-dark{
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0,0,0,0.8), transparent);
+    justify-content: flex-start;
+}
+.advantage-content{
+    width: 50%;
+    color: #fff;
+    margin: 64px 36px;
+}
+.advantage-content h1{
+    margin: 48px 0;
+    font-size: 28px;
+}
+.advantage-content p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 992px){
+
+}
+
+
+@media screen and (max-width: 596px){
+    .about-heading h5{
+        font-size: 10px;
+    }
+    .about-heading h1{
+        font-size: 24px;
+        margin: 12px 0;
+    }
+    .about-heading p{
+        width: 90%;
+        font-size: 14px;
+        margin: auto;
+    }
+    .about-buttons{
+        width: 90%;
+        margin: 12px auto;
+        
+    }
+    .arrow-button{
+        padding: 10px 20px;
+
+    }
+
+    .background-dark{
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    }
+    .vision-content{
+        width: 100%;
+    }
+
+
+    .values{
+        margin: 24px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Three columns with equal width */
+        gap: 24px;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .values div h1{
+        font-size: 18px;
+        
+    }
+
+    .values div p{
+        font-size: 14px;
+        
+    }
+
+    .advantage .background-dark{
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8));
+    }
+    .advantage-content{
+        width: 100%;
+    }
+
+}
