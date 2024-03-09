@@ -36,7 +36,7 @@ const Contact = () => {
                     </div>  
                 </div>
             </Front>    
-            <div className="reach-out">
+            {/* <div className="reach-out">
                 <div className="reach-out-dark">
                     <div className="reach-out-content">
                         <h1>Why Reach Out to B2Y?</h1>
@@ -45,7 +45,7 @@ const Contact = () => {
                         <p>We invite you to connect with us and embark on a journey of technological innovation. Whether you are a startup seeking a tech partner or an established enterprise looking to elevate your digital presence, B2Y is here to make a difference.</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="contact-us">
                 <div className="contact-us-left">
                     <h1>How to Connect with Us?</h1>
@@ -59,8 +59,8 @@ const Contact = () => {
                                 <h1>Registered Address</h1>
                                 <address>
                                 301/302, 3rd Floor, Saket Callipolis,<br />
-                                Sarjapur - Marathahalli Rd, Doddakannelli,<br />
-                                Bengaluru, Karnataka 560035
+                                Sarjapur - Marathahalli Road,<br />
+                                Doddakannelli, Bengaluru, Karnataka 560035
                                 </address>
                             </div>
                         </div>

@@ -71,7 +71,7 @@
 
 .contact-us{
     display: flex;
-    padding: 64px 128px;
+    padding: 64px;
     /* background-image: linear-gradient(to right,#FFDAB9, #ADD8E6,#FFFFFF); */
     background-color: #fff;
     color: #000;
@@ -79,14 +79,14 @@
 
 }
 .contact-us-left{
-    width: 60%;
+    width: 55%;
 }
 .contact-us-left h1{
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 12px;
 }
 .contact-us-left p{
-    font-size: 18px;
+    font-size: 14px;
     width: 70%;
     text-align: justify;
 }
@@ -113,16 +113,19 @@
 
 }
 .contact-icon-content h1{
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 8px;
+}
+.contact-icon-content address{
+    font-size: 14px;
 }
 
 .contact-us-right{
-    width: 40%;
+    width: 45%;
 }
 
 .contact-us-right form{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -149,6 +152,54 @@
 
 @media screen and (max-width: 992px) {
 
+
+    .contact-us{
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 12px;
+    }
+    .contact-us-left{
+        width: 90%;
+        max-width: 600px;
+
+    }
+    .contact-us-left h1{
+        font-size: 28px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    .contact-us-left p{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-icons-container{
+        margin: 48px 0;
+        align-items: center;
+    }
+    .contact-icon-container{
+        width: 75%;
+    }
+
+    .contact-icon-content h1{
+        font-size:22px;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    .contact-icon-container p, .contact-icon-container address{
+        font-size: 14px;
+    }
+    
+    .contact-us-right{
+        width: 90%;
+        max-width: 600px;
+        padding: 48px 0;
+    }
+    
+    
+    .contact-us-right form h1{
+        font-size: 28px;
+    }
     
 }
 
@@ -189,27 +240,16 @@
 
 
 
-    .contact-us{
-        display: flex;
-        flex-direction: column;
-        padding: 24px 0;
-        /* background-image: linear-gradient(to right,#FFDAB9, #ADD8E6,#FFFFFF); */
-        background-color: #fff;
-        color: #000;
-        align-items: center;
-        
-    
-    }
     .contact-us-left{
         width: 90%;
     }
     .contact-us-left h1{
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 12px;
         text-align: center;
     }
     .contact-us-left p{
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
         text-align: center;
     }
@@ -220,17 +260,18 @@
         gap: 32px;
     }
     .contact-icon-container{
+        width: 100%;
         display: flex;
-        gap: 24px;
+        gap: 12px;
     }
 
     .contact-icon-content h1{
-        font-size:20px;
+        font-size:18px;
         text-align: left;
         margin-bottom: 8px;
     }
     .contact-icon-container p, .contact-icon-container address{
-        font-size: 14px;
+        font-size: 12px;
         text-align: left;
     }
     

@@ -1,169 +1,118 @@
-.services-page{
-    color: #fff;
-    text-align: center;
+.services-page {
+  color: #fff;
+  text-align: center;
 }
-.services-page h1{
-    font-size: 40px;
-    margin: 12px 0;
+.services-page h1 {
+  font-size: 40px;
+  margin: 12px 0;
 }
-.services-page p{
-    width: 90%;
-    max-width: 800px;
-    text-align: center;
-    font-size: 18px;
-    margin: auto;
+.services-page p {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
 }
-.services-page-buttons{
-    width: 90%;
-    max-width: 800px;
-    display: flex;
-    justify-content: flex-end;   
-    margin: auto;
+.services-page-buttons {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
-
-.our-services{
-    /* background-color: #2488EB; */
-    height: auto;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-    padding-top: 72px;
+.our_services_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px;
 }
-.our-services-head{
-    text-align: center;
-    color: #000;
+.our_service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-
-
-.services{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
-    gap: 24px;
+.our_service_heading {
+  color: #222222;
+  font-size: 2rem;
 }
-.service{
-    width: 90%;
-    overflow: hidden;
-    background-color: #fff;
-    padding: 24px;
-    border: 1px solid #000;
-    border-radius: 24px;
-    
-    border-bottom: 12px solid #000;
+.our_service_para {
+  color: #777;
+  font-size: 1rem;
 }
-
-.service-head{
-    display: flex;
-    margin-bottom: 36px;
-    justify-content: space-between;
-    align-items: center;
+.our_service_content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+  gap: 10px;
 }
-.service-icon{
-    width: 80px;
-    height: 80px;
+.our_service_card {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  padding: 40px 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
-.service-head h2{
-    font-size: 28px;
-    padding: 24px 24px 12px 24px;
+.service_card_content {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.service-description{
-    text-align: center;
+.card_heading {
+  font-size: 1.5rem;
+  color: #222222;
 }
-.service-description p{
-    font-size: 18px;
-    padding: 0px 24px 24px 24px;
+.card_para {
+  font-size: 0.9rem;
+  color: #777;
 }
-
-@media screen and (max-width: 992px){
-
-
-    .our-services-head{
-        font-size: 16px;
-    }
-    
-    
-    .services{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
-        gap: 12px;
-    }
-    .service{
-        width: 100%;
-    }
-    
-    .service-head{
-        margin-bottom: 18px;
-    }
-    .service-icon{
-        width: 50px;
-        height: 50px;
-    }
-    .service-head h2{
-        font-size: 24px;
-        padding: 12px;
-    }
-    .service-description{
-        text-align: center;
-    }
-    .service-description p{
-        font-size: 14px;
-        padding: 0px 12px;
-    }
+/* .svg {
+  height;
+} */
+.icon {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #ff6347;
 }
-
-@media screen and (max-width: 596px){
-    .services-page h1{
-        font-size: 24px;
-        margin: 12px 0;
-    }
-    .services-page p{
-        width: 90%;
-        margin: auto;
-        font-size: 14px;
-    }
-    .services-page-buttons{
-        width: 90%;
-        margin: 12px auto;
-    }
-    .arrow-button{
-        padding: 10px 20px;
-
-    }
-
-    .our-services-head{
-        font-size: 16px;
-    }
-    
-    
-    .services{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Three columns with equal width */
-        gap: 12px;
-    }
-    .service{
-        width: 100%;
-    }
-    
-    .service-head{
-        margin-bottom: 18px;
-    }
-    .service-icon{
-        width: 50px;
-        height: 50px;
-    }
-    .service-head h2{
-        font-size: 20px;
-        padding: 12px;
-    }
-    .service-description{
-        text-align: center;
-    }
-    .service-description p{
-        font-size: 12px;
-        padding: 0px 12px;
-    }
+@media screen and (max-width: 1024px) {
+  .our_service_content {
+    padding: 10px;
+  }
+  .our_service_card {
+    width: 31%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .our_service_content {
+    padding-top: 10px;
+  }
+  .our_service_card {
+    width: 49%;
+  }
+  .card_heading {
+    font-size: 1rem;
+  }
+  .card_para {
+    font-size: 0.8rem;
+    color: #777;
+  }
+}
+@media screen and (max-width: 425px) {
+  .our_service_card {
+    width: 100%;
+  }
 }
