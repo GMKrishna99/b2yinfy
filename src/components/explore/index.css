@@ -111,6 +111,7 @@
 }
 .explore_section_container .right_card .card img {
   width: 457px;
+  height: 305px;
   max-height: 610px; /* Limit image height */
   -webkit-transition: transform 0.6s, filter 0.6s; /* Adjusted transition properties */
   -moz-transition: transform 0.6s, filter 0.6s; /* Adjusted transition properties */
