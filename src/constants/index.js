@@ -1,3 +1,4 @@
+// service section SVG import
 import WEBSVG from "../assets/svg/web-development-svgrepo-com.svg";
 import MOBILESVG from "../assets/svg/mobile-development-coding-code-xcode-svgrepo-com.svg";
 import SOFTWARESVG from "../assets/svg/rectangle-code-svgrepo-com.svg";
@@ -5,10 +6,18 @@ import CLOUDSVG from "../assets/svg/cloud-computing-data-svgrepo-com.svg";
 import CONSULTINGSVG from "../assets/svg/layout-app-user-svgrepo-com.svg";
 import SUPPORTSVG from "../assets/svg/support-svgrepo-com.svg";
 
+// about us SVG imports
 import AdvantageSVG from "../assets/svg/advantage.svg";
 import MissionSVG from "../assets/svg/mission.svg";
 import VisionSVG from "../assets/svg/vision.svg";
 
+// explore Section images
+import ExperienceImg from "../assets/images/experience.jpg";
+import InsightImg from "../assets/images/insight.jpg";
+import BusinessAccelerateImg from "../assets/images/BusinessAccelerate.jpg";
+import AssureImage from "../assets/images/assure.jpg";
+
+// menu items
 export const menuItemsList = [
   {
     title: "Home",
@@ -27,6 +36,7 @@ export const menuItemsList = [
     path: "/contact",
   },
 ];
+// choose us list
 export const chooseUsList = [
   {
     title: "STEP-1",
@@ -102,6 +112,7 @@ export const chooseUsList = [
   },
 ];
 
+// service section list
 export const servicesList = [
   {
     title: "Web Development",
@@ -140,7 +151,7 @@ export const servicesList = [
       "Keep your business running smoothly with our reliable IT support services. From troubleshooting technical issues to providing proactive maintenance and monitoring, our dedicated support team is available around the clock to ensure your systems are always up and running.",
   },
 ];
-
+// about us top list
 export const aboutList = [
   {
     title: "Our Advantages",
@@ -161,53 +172,50 @@ export const aboutList = [
       "We strive to make a meaningful impact by enhancing the performance of your organization through dependable business insights, innovative thinking, cutting-edge design, and the latest offerings available.",
   },
 ];
+
+// what we offer
 export const whatWeOffer = [
+  { title: "Software Development", color: "#2980b9" }, // Dark Blue
+  { title: "Cybersecurity Solutions", color: "#27ae60" }, // Green
+  { title: "IT Consulting", color: "#8e44ad" }, // Purple
+  { title: "Cloud Services", color: "#f39c12" }, // Orange
+  { title: "Data Analytics", color: "#e74c3c" }, // Red
+  { title: "Digital Transformation", color: "#3498db" }, // Blue
+  { title: "Managed IT Services", color: "#2c3e50" }, // Dark Blue
+  { title: "Training and Education", color: "#d35400" }, // Orange
+  { title: "Staffing Solutions", color: "#16a085" }, // Green
+  { title: "Web Development", color: "#34495e" }, // Dark Gray
+  { title: "Payroll Services", color: "#e67e22" }, // Orange
+  { title: "Dynamic CRM", color: "#c0392b" }, // Dark Red
+  { title: "Outsourcing Services", color: "#f1c40f" }, // Yellow
+  { title: "Business Process Management (BPM)", color: "#7f8c8d" }, // Gray
+  { title: "Testing Solutions", color: "#9b59b6" }, // Purple
+  { title: "Mobile Application Development and Maintenance", color: "#1abc9c" }, // Turquoise
+];
+
+export const exploreUsLeft = [
   {
-    title: "Software Development",
+    title: "Experience",
+    img: ExperienceImg,
+    description:
+      "Craft seamless digital experiences to customer satisfaction and foster brand loyalty with B2Y Infy.",
   },
   {
-    title: "Cybersecurity Solutions",
+    title: "Insight",
+    img: InsightImg,
+    description:
+      "Harness the power of analytics to drive exponential growth and monetize data with B2Y Infy.",
   },
   {
-    title: "IT Consulting",
+    title: "Accelerate",
+    img: BusinessAccelerateImg,
+    description:
+      "Find your path to non-disruptive IT renewal and keep innovating with B2Y Infy's expertise.",
   },
   {
-    title: "Cloud Services",
-  },
-  {
-    title: "Data Analytics",
-  },
-  {
-    title: "Digital Transformation",
-  },
-  {
-    title: "Managed IT Services",
-  },
-  {
-    title: "Training and Education",
-  },
-  {
-    title: "Staffing Solutions",
-  },
-  {
-    title: "Web Development",
-  },
-  {
-    title: "Payroll Services",
-  },
-  {
-    title: "Dynamic CRM",
-  },
-  {
-    title: "Outsourcing Services",
-  },
-  {
-    title: "Business Process Management (BPM)",
-  },
-  {
-    title: "Testing Solutions",
-  },
-  {
-    title: "Mobile Application Development and Maintenance",
+    title: "Assure",
+    img: AssureImage,
+    description:
+      "Be the catalyst for growth by solving cybersecurity challenges and risks with B2Y Infy.",
   },
 ];

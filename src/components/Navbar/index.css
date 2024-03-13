@@ -1,15 +1,23 @@
+@font-face {
+  font-family: "lucidacalligraphy";
+  src: url("../../fonts/lucida\ calligraphy\ italic.ttf") format("truetype");
+  /* Additional font styles like font-weight, font-style can be specified here */
+}
+
 nav {
-  padding: 20px;
+  padding: 5px 30px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99;
-  height: 72px;
 }
-
+.slide-in {
+  color: #ff6247;
+}
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -24,17 +32,23 @@ nav {
   transform: rotate(180deg);
   transition: all 0.2s ease-in-out;
 }
-
 .logo {
+  position: relative;
+  width: 100%;
+}
+.logo_img {
+  width: 85px;
+  height: 100px;
+}
+.logo_sub {
+  position: absolute;
+  bottom: 8px;
+  font-family: "lucidacalligraphy";
+  margin-left: -20px;
+  color: #ff6247;
+  font-size: 1rem;
   font-weight: 600;
-  font-size: 25px;
-  color: tomato;
 }
-
-.logo span {
-  color: #fff;
-}
-
 .menu-list {
   list-style-type: none;
   display: flex;
@@ -45,18 +59,15 @@ nav {
 .menu-list li {
   text-decoration: none;
   font-weight: 500;
-  color: #fff;
+  color: #00000077;
   padding: 5px 10px;
   margin-left: 20px;
 }
 .menuList_hover:hover {
-  color: #ff6347;
-  transition: all 0.2s ease-in-out;
+  color: #37d3d3;
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 992px) {
-  .logo {
-    font-size: 20px;
-  }
   .menu-list li {
     font-size: 14px;
     margin-left: 10px;

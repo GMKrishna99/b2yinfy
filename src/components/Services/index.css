@@ -12,6 +12,7 @@
   text-align: center;
   font-size: 18px;
   margin: auto;
+  color: #cacaca;
 }
 .services-page-buttons {
   width: 90%;
@@ -19,6 +20,7 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  padding-top: 5px;
 }
 .our_services_section {
   display: flex;
@@ -33,7 +35,7 @@
   flex-direction: column;
 }
 .our_service_heading {
-  color: #222222;
+  color: #2e3192;
   font-size: 2rem;
 }
 .our_service_para {
@@ -58,6 +60,10 @@
   padding: 40px 20px;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.our_service_card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 .service_card_content {
   padding-top: 30px;
@@ -86,7 +92,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  background-color: #ff6347;
+  background-color: #2e3192;
 }
 @media screen and (max-width: 1024px) {
   .our_service_content {

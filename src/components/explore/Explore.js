@@ -1,6 +1,6 @@
 import LeftImg from "../../assets/images/left_img.jpg";
-import aboutImg from "../../assets/images/about-us-1.jpg";
 import React from "react";
+import { exploreUsLeft } from "../../constants/index";
 import "./index.css";
 
 const Explore = () => {
@@ -32,46 +32,15 @@ const Explore = () => {
           </div>
         </div>
         <div className="right_card">
-          <div className="card">
-            <img src={aboutImg} alt="left_Image" />
-            <div className="content">
-              <h2 className="content_heading">Innovation.</h2>
-              <p className="content_para">
-                Innovation turns dreams into reality, bridging imagination with
-                tangible outcomes. .
-              </p>
+          {exploreUsLeft.map((item) => (
+            <div className="card">
+              <img src={item.img} alt="left_Image" />
+              <div className="content">
+                <h2 className="content_heading">{item.title}</h2>
+                <p className="content_para">{item.description}</p>
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <img src={aboutImg} alt="left_Image" />
-            <div className="content">
-              <h2 className="content_heading">Innovation.</h2>
-              <p className="content_para">
-                Innovation turns dreams into reality, bridging imagination with
-                tangible outcomes. .
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img src={aboutImg} alt="left_Image" />
-            <div className="content">
-              <h2 className="content_heading">Innovation.</h2>
-              <p className="content_para">
-                Innovation turns dreams into reality, bridging imagination with
-                tangible outcomes. .
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img src={aboutImg} alt="left_Image" />
-            <div className="content">
-              <h2 className="content_heading">Innovation.</h2>
-              <p className="content_para">
-                Innovation turns dreams into reality, bridging imagination with
-                tangible outcomes. .
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

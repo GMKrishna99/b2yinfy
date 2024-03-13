@@ -42,70 +42,6 @@ const About = () => {
           </div>
         </div>
       </Front>
-      {/* <div className="vision">
-        <div className="vision-content">
-          <h1>Our Story</h1>
-          <h5>From Vision to Venture</h5>
-          <img src={ABOUT1} alt="about-2-mobile" className="mobile-about" />
-          <p>
-            Born out of a shared passion for cutting-edge technology, B2Y was
-            founded by a group of seasoned professionals with a collective
-            vision to create a company that goes beyond conventional IT
-            services. With backgrounds ranging from software development to
-            cybersecurity, our diverse team brings a wealth of expertise and a
-            shared commitment to excellence.
-          </p>
-        </div>
-
-        <div className="vision-image">
-          <img src={ABOUT1} alt="about-1" />
-        </div>
-      </div> */}
-
-      {/* <div className="mission">
-        <div className="mission-image">
-          <img src={ABOUT2} alt="about-2" />
-        </div>
-
-        <div className="mission-content">
-          <h1>Our Mission</h1>
-          <h5>Empowering Your Digital Journey</h5>
-          <img src={ABOUT2} alt="about-2-mobile" className="mobile-about" />
-          <p>
-            Our mission is simple yet profound – to empower businesses through
-            tailor-made IT solutions that align with their goals. Whether it's
-            developing robust software applications, securing digital assets, or
-            navigating the complexities of cloud technology, we are here to be
-            your trusted partner in the digital journey.
-          </p>
-        </div>
-      </div> */}
-      {/* <div className="advantage">
-        <div className="background-dark">
-          <div className="advantage-content">
-            <h1>What Sets Us Apart: The B2Y Advantage</h1>
-            <p>
-              In a rapidly evolving digital era, staying ahead requires more
-              than just keeping up with the trends. At B2Y, we distinguish
-              ourselves through a combination of innovation, collaboration, and
-              a client-centric approach. We don't just provide solutions; we
-              craft experiences that elevate businesses to new heights.
-            </p>
-            <h1>The B2Y Experience: Where Technology Meets Excellence</h1>
-            <p>
-              As we embark on this exciting venture, we invite you to explore
-              the world of B2Y. Beyond the lines of code and the intricacies of
-              algorithms, we are a team dedicated to driving meaningful change
-              in the digital landscape. Join us on this journey, and let's
-              innovate, collaborate, and create something extraordinary
-              together.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
-      {/* advantages and machines and vision */}
-
       <div className="advantages_Container">
         {aboutList.map((item) => (
           <div className="advantages_card">
@@ -120,14 +56,20 @@ const About = () => {
         ))}
       </div>
 
-      {/* ourstory section */}
-      <div className="story_section">
-        <div className="story_container">
-          <img src={OurStoryImg} className="story-img" alt="story-img" />
-          <div className="story_text">
-            <div className="black_trans"></div>
-            <h2 className="our_story_head">Our Story</h2>
-            <span className="out_story_subheading">From Vision to Venture</span>
+      <div className="storyContainer">
+        <div className="storySection">
+          <div className="story_img">
+            <img src={OurStoryImg} alt="Our_Story" className="storyimg" />
+          </div>
+          <div className="storyText">
+            <div className="storyText_head_section">
+              <h2 className="our_story_head">
+                Our<span className="color">Story</span>
+              </h2>
+              <span className="out_story_subheading">
+                From Vision to Venture
+              </span>
+            </div>
             <p className="our-story_para">
               Established from a mutual enthusiasm for pioneering technology,
               B2Y was conceived by a consortium of experienced professionals
@@ -138,14 +80,16 @@ const About = () => {
             </p>
           </div>
         </div>
-
-        <div className="story_container">
-          <img src={OurMissionImg} className="story-img" alt="story-img" />
-          <div className=" right_content">
-            <h2 className="our_story_head">Our Mission</h2>
-            <span className="out_story_subheading">
-              Empowering Your Digital Journey
-            </span>
+        <div className="storySection">
+          <div className="storyText">
+            <div className="storyText_head_section">
+              <h2 className="our_story_head">
+                Our<span className="color">Mission</span>
+              </h2>
+              <span className="out_story_subheading">
+                Empowering Your Digital Journey
+              </span>
+            </div>
             <p className="our-story_para">
               Born from a shared passion for cutting-edge technology, B2Y was
               founded by a group of seasoned professionals with a collective
@@ -155,6 +99,9 @@ const About = () => {
               shared commitment to excellence.
             </p>
           </div>
+          <div className="story_img">
+            <img src={OurMissionImg} alt="Our_Story" className="storyimg" />
+          </div>
         </div>
       </div>
 
@@ -162,15 +109,25 @@ const About = () => {
 
       <div className="what_we_offer_container">
         <div className="what_we_offer_text">
-          <h1 className="what_we_offer_heading">What We Offer ?</h1>
+          <h1 className="what_we_offer_heading">
+            What We <span className="color">Offer</span> ?
+          </h1>
           <p className="what_we_offer_subheading">
             At B2Y, we stand prepared to deliver exceptional service...
           </p>
         </div>
         <div className="what_we_offer_cards">
           {whatWeOffer.map((item) => (
-            <div className="what_we_offer_card">
-              <span className="what_we_offer_card_heading">{item.title}</span>
+            <div
+              className="what_we_offer_card"
+              style={{ backgroundColor: item.bgcolor }}
+            >
+              <span
+                className="what_we_offer_card_heading"
+                style={{ color: item.color }}
+              >
+                {item.title}
+              </span>
             </div>
           ))}
         </div>

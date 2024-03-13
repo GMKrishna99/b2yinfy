@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Simulating loading for 2 seconds. Adjust as needed.
+    }, 2000); // Simulating loading for 1 second. Adjust as needed.
 
     return () => clearTimeout(timer);
   }, []);

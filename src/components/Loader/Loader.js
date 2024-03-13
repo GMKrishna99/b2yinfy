@@ -5,7 +5,7 @@ import { SyncLoader } from "react-spinners"; // Import the loading spinner compo
 const LoadingSpinner = () => {
   return (
     <div className="loading-spinner">
-      <SyncLoader color="#FF6347" speedMultiplier={0.7} />
+      <SyncLoader color="#2E3192" speedMultiplier={0.7} />
     </div>
   );
 };

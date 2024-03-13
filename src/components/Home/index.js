@@ -8,6 +8,7 @@ import { Chrono } from "react-chrono";
 import ChooseUs from "./ChooseUs";
 import { chooseUsList } from "../../constants/index";
 import ExplorePage from "../explore/Explore";
+import Digital from "../Digital_Solutions/Digital";
 
 const Home = () => {
   const handleButtonClick = () => {
@@ -42,10 +43,14 @@ const Home = () => {
 
       {/* explore section */}
       <ExplorePage />
+      {/* Digital Solutions */}
+      <Digital />
 
       {/* Why choose us section */}
       <div className="why-choose-us">
-        <h1 className="why-choose-us-head">WHY ONLY US?</h1>
+        <h1 className="why-choose-us-head">
+          WHY ONLY <span className="color">US</span>?
+        </h1>
         <p className="why-choose-us-description">
           At B2Y, we understand that choosing the right IT partner for your
           business is crucial. With a myriad of options available, what sets us
@@ -63,10 +68,10 @@ const Home = () => {
             slideShowType="reveal"
             className={{ cardTitle: "my-card-title" }}
             theme={{
-              primary: "#ff6347",
-              secondary: "#ff6347",
-              titleColor: "#ff6347",
-              cardTitle: "#222222",
+              primary: "#20d3d3",
+              secondary: "#20d3d3",
+              titleColor: "#2E3192",
+              cardTitle: "#22222",
               cardSubtitle: "#312f36",
             }}
           >

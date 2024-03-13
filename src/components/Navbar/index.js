@@ -4,6 +4,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import "./index.css";
 import { Link } from "react-router-dom";
 import { menuItemsList } from "../../constants/index";
+import Logo from "../../assets/logo/logoPinkTransperant.png";
 
 const Navbar = () => {
   // State variables
@@ -64,11 +65,12 @@ const Navbar = () => {
   return (
     <nav style={{ backgroundColor: navbarColor }}>
       {/* Logo */}
-      <Link to="/" onClick={() => setSelectedItem(null)}>
-        <div className="logo">
-          B2Y <span style={{ color: navbarTextColor }}>Infy</span>
-        </div>
-      </Link>
+      <div className="logo">
+        <Link to="/" onClick={() => setSelectedItem(null)}>
+          <img src={Logo} alt="logo" className="logo_img" />
+        </Link>
+        <span className="logo_sub">you Believe We Achieve</span>
+      </div>
       {/* Menu Icon */}
       <div className="menu-icon" onClick={() => setClicked(!clicked)}>
         {clicked ? (
@@ -92,7 +94,7 @@ const Navbar = () => {
               style={{
                 color:
                   selectedItem === item || hoveredItem === item
-                    ? "#FF6347" // Change this to your hover color
+                    ? "#FF6247" // Change this to your hover color
                     : navbarTextColor,
                 cursor: "pointer",
               }}

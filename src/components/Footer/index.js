@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Logo from "../../assets/logo/logoPinkTransperant.png";
 import {
   FaArrowUp,
   FaTwitter,
@@ -34,9 +35,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-b2y">
           <Link to="/">
-            <div className="footer-logo" onClick={handleScrollToTop}>
-              B2Y<span>INFY</span>
-            </div>
+            <img src={Logo} alt="logo" className="logo_img" />
           </Link>
           <p>
             B2Y is a dynamic and innovative IT solutions provider dedicated to
@@ -50,40 +49,36 @@ const Footer = () => {
               href="https://www.facebook.com/b2yinfy"
               target="_blank"
               rel="noopener noreferrer"
+              className="facebook"
             >
-              <span>
-                <FaFacebookF />
-              </span>
+              <FaFacebookF className="social_icons" />
             </a>
 
             <a
               href="https://www.instagram.com/b2yinfy"
               target="_blank"
               rel="noopener noreferrer"
+              className="instagram"
             >
-              <span>
-                <FaInstagram />
-              </span>
+              <FaInstagram className="social_icons" />
             </a>
 
             <a
               href="https://www.linkedin.com/in/b2yinfy"
               target="_blank"
               rel="noopener noreferrer"
+              className="linkedin"
             >
-              <span>
-                <FaLinkedinIn />
-              </span>
+              <FaLinkedinIn className="social_icons" />
             </a>
 
             <a
               href="https://twitter.com/b2yinfy"
               target="_blank"
               rel="noopener noreferrer"
+              className="twitter"
             >
-              <span>
-                <FaTwitter />
-              </span>
+              <FaTwitter className="social_icons" />
             </a>
           </div>
         </div>
