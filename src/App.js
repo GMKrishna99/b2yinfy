@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-// import { Helmet } from "react-helmet";
+import "./App.css";
+import { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -31,27 +31,9 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Simulating loading for 2 seconds. Adjust as needed.
+    }, 2000); // Simulating loading for 1 second. Adjust as needed.
 
     return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    const handleShare = () => {
-      // Update metadata when sharing
-      // For example:
-      document.title = "Shared Page Title";
-    };
-
-    if (navigator.share) {
-      window.addEventListener("share", handleShare);
-    }
-
-    return () => {
-      if (navigator.share) {
-        window.removeEventListener("share", handleShare);
-      }
-    };
   }, []);
 
   return (
