@@ -28,6 +28,9 @@
   text-fill-color: transparent; /* Hide the original text color */
   animation: gradientAnimation 5s infinite alternate; /* Optional animation */
 }
+.slide-in {
+  color: #f3a83f;
+}
 
 /* Animation and keyframes for the typewriter effect */
 @keyframes typing {

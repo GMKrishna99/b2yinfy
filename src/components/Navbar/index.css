@@ -15,9 +15,6 @@ nav {
   width: 100%;
   z-index: 99;
 }
-.slide-in {
-  color: #ff6247;
-}
 .menu-icon {
   display: none;
   cursor: pointer;
