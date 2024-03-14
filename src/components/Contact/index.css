@@ -168,7 +168,13 @@
   cursor: pointer;
   color: #fff;
 }
-
+.error {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ff0000;
+}
 @media screen and (max-width: 992px) {
   .contact-us {
     flex-direction: column;

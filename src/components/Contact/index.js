@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import "./index.css";
 
@@ -8,7 +9,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
+  const form = useRef();
   const handleButtonClick = () => {
     // Scroll down by 100vh
     window.scrollTo({
@@ -16,7 +21,38 @@ const Contact = () => {
       behavior: "smooth",
     });
   };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+    // Perform form validation here
+    const formData = new FormData(e.target);
+    const subject = formData.get("subject");
+    const name = formData.get("user_name");
+    const email = formData.get("user_email");
+    const phone = formData.get("user_phone");
+    const message = formData.get("message");
+
+    if (!subject || !name || !email || !phone || !message) {
+      toast.error("Please fill out all fields.");
+      return; // Exit function if form is not valid
+    }
+
+    // If form is valid, proceed with sending email
+    emailjs
+      .sendForm("service_05e8jre", "template_6nmzldq", e.target, {
+        publicKey: "S8A9g2VhAo8RFjuHr",
+      })
+      .then(
+        () => {
+          toast.success("Thank you for sending Email");
+        },
+        (error) => {
+          toast.error(`Failed to send email: ${error.text}`);
+        }
+      );
+
+    e.target.reset(); // Reset form after submission
+  };
   return (
     <>
       <Front>
@@ -92,19 +128,20 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-us-right">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <h1>
               Get in <span className="color">Touch</span>
             </h1>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Email" />
-            <input type="email" placeholder="subject" />
-            <input type="text" placeholder="Phone" />
+            <input type="text" placeholder="subject" name="subject" />
+            <input type="text" placeholder="Your Name" name="user_name" />
+            <input type="email" placeholder="Email" name="user_email" />
+            <input type="number" placeholder="Phone" name="user_phone" />
             <textarea
               type="text"
               placeholder="Your Message"
               rows="5"
               cols="60"
+              name="message"
             ></textarea>
             <button type="submit" className="submit_btn">
               Submit

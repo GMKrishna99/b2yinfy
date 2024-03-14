@@ -7,6 +7,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
+import { ToastContainer } from "react-toastify"; // Import ToastContainer
+import "react-toastify/dist/ReactToastify.css"; // Import CSS for ToastContainer
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
@@ -37,67 +39,71 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      {!loading && <Navbar />} {/* Render navbar only if not loading */}
-      <ScrollToTop />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <CSSTransition
-              in={!loading}
-              timeout={1000}
-              classNames="fade"
-              unmountOnExit
-            >
-              <Home />
-            </CSSTransition>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <CSSTransition
-              in={!loading}
-              timeout={1000}
-              classNames="fade"
-              unmountOnExit
-            >
-              <About />
-            </CSSTransition>
-          }
-        />
-        <Route
-          path="/services"
-          element={
-            <CSSTransition
-              in={!loading}
-              timeout={1000}
-              classNames="fade"
-              unmountOnExit
-            >
-              <Services />
-            </CSSTransition>
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            <CSSTransition
-              in={!loading}
-              timeout={1000}
-              classNames="fade"
-              unmountOnExit
-            >
-              <Contact />
-            </CSSTransition>
-          }
-        />
-      </Routes>
-      {!loading && <Footer />}
-      {loading && <LoadingSpinner />}{" "}
-      {/* Display loading spinner while loading */}
-    </Router>
+    <div>
+      <ToastContainer position="bottom-right" />
+      {/* Place ToastContainer here */}
+      <Router>
+        {!loading && <Navbar />} {/* Render navbar only if not loading */}
+        <ScrollToTop />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <CSSTransition
+                in={!loading}
+                timeout={1000}
+                classNames="fade"
+                unmountOnExit
+              >
+                <Home />
+              </CSSTransition>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <CSSTransition
+                in={!loading}
+                timeout={1000}
+                classNames="fade"
+                unmountOnExit
+              >
+                <About />
+              </CSSTransition>
+            }
+          />
+          <Route
+            path="/services"
+            element={
+              <CSSTransition
+                in={!loading}
+                timeout={1000}
+                classNames="fade"
+                unmountOnExit
+              >
+                <Services />
+              </CSSTransition>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <CSSTransition
+                in={!loading}
+                timeout={1000}
+                classNames="fade"
+                unmountOnExit
+              >
+                <Contact />
+              </CSSTransition>
+            }
+          />
+        </Routes>
+        {!loading && <Footer />}
+        {loading && <LoadingSpinner />}{" "}
+        {/* Display loading spinner while loading */}
+      </Router>
+    </div>
   );
 }
 
