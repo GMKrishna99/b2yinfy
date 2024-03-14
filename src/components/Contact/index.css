@@ -168,6 +168,9 @@ input[type="number"] {
   width: 100%;
   padding: 12px;
 }
+.contact-us-right form textarea {
+  resize: none;
+}
 .contact-us form button {
   padding: 12px 28px;
   align-self: flex-start;
@@ -177,13 +180,13 @@ input[type="number"] {
   cursor: pointer;
   color: #fff;
 }
-.error {
+/* .error {
   max-width: max-content;
   display: flex;
   align-items: center;
   gap: 5px;
   color: #ff0000;
-}
+} */
 @media screen and (max-width: 992px) {
   .contact-us {
     flex-direction: column;
