@@ -97,8 +97,9 @@ const Contact = () => {
               Get in <span className="color">Touch</span>
             </h1>
             <input type="text" placeholder="Your Name" />
-            <input type="text" placeholder="Phone" />
             <input type="email" placeholder="Email" />
+            <input type="email" placeholder="subject" />
+            <input type="text" placeholder="Phone" />
             <textarea
               type="text"
               placeholder="Your Message"
